@@ -1,0 +1,14 @@
+---
+# Update for your Foreman and Puppet master hostname(s)
+:url: "https://ns-foreman01.in.namespace.at"
+:ssl_ca: "/var/lib/puppet/ssl/certs/ca.pem"
+:ssl_cert: "/var/lib/puppet/ssl/certs/<%= @fqdn %>.pem"
+:ssl_key: "/var/lib/puppet/ssl/private_keys/<%= @fqdn %>.pem"
+
+# Advanced settings
+:puppetdir: "/var/lib/puppet"
+:puppetuser: "puppet"
+:facts: true
+:timeout: 10
+:threads: null
+
